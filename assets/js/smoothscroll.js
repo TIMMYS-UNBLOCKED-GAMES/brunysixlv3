@@ -78,12 +78,12 @@
                     document.documentElement.style.setProperty('--footer-background', '#4a0a0a');
                     break;
                 default:
-                    document.documentElement.style.setProperty('--navbar-color', '#0d0d0d');
-                    document.documentElement.style.setProperty('--background-color', '#0d0d0d');
-                    document.documentElement.style.setProperty('--cover-color', '#0d0d0d');
-                    document.documentElement.style.setProperty('--select-color', '#0d0d0d');
-                    document.documentElement.style.setProperty('--content-background', '#0d0d0d');
-                    document.documentElement.style.setProperty('--footer-background', '#0d0d0d');
+                    document.documentElement.style.setProperty('--navbar-color', '#050505');
+                    document.documentElement.style.setProperty('--background-color', '#050505');
+                    document.documentElement.style.setProperty('--cover-color', '#050505');
+                    document.documentElement.style.setProperty('--select-color', '#050505');
+                    document.documentElement.style.setProperty('--content-background', '#050505');
+                    document.documentElement.style.setProperty('--footer-background', '#050505');
             }
             if (save) {
                 localStorage.setItem('theme', theme);

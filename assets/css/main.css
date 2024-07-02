@@ -3,12 +3,12 @@
 	    color: #fff;
             margin: 0;
             padding: 0;
-            background-color: var(--background-color, #0d0d0d);
+            background-color: var(--background-color, #050505);
 	    text-align: center;
         }
 
         navbarthing {
-            background: var(--navbar-color, #0d0d0d); 
+            background: var(--navbar-color, #050505); 
             color: #fff;
             padding: 10px 0;
             text-align: center;
@@ -75,7 +75,7 @@
 
 	#arcade-cover {
             height: 100vh;
-            background-color: var(--cover-color, #0d0d0d);
+            background-color: var(--cover-color, #050505);
             color: #fff;
             display: flex;
             text-align: center;
@@ -89,7 +89,7 @@
 
         #cover {
             height: 100vh;
-            background-color: var(--cover-color, #0d0d0d);
+            background-color: var(--cover-color, #050505);
             color: #fff;
             display: flex;
             justify-content: center;
@@ -102,7 +102,7 @@
         }
 
 	#cover .select {
-		background-color: var(--select-color, #121212);
+		background-color: var(--select-color, #050505);
 		color: #fff;
 		width: 200px;
 		max-width: 400px;
@@ -151,7 +151,7 @@
 
         #content {
             padding: 80px 20px 20px; 
-            background: var(--content-background, #0d0d0d);
+            background: var(--content-background, #050505);
         }
 
         .goonercard {
@@ -176,7 +176,7 @@
 	    border-top: 1px solid #ccc;
             text-align: center;
             padding: 20px;
-            background: var(--footer-background, #0d0d0d); 
+            background: var(--footer-background, #050505); 
             color: #fff;
         }
 
