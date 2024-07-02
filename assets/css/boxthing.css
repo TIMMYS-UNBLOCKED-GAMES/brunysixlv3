@@ -23,8 +23,8 @@
 }
 
 .boxthing {
-    width: 200px;
-    height: 120px;
+    width: 400px;
+    height: 240px;
     position: relative;
     border-radius: 10px;
 }
