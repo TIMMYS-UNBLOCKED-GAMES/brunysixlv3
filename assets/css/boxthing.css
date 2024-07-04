@@ -39,6 +39,6 @@
 
 .boxthing:hover img {
         filter: brightness(80%);
-        border: 3px solid white;
+        border: 3px solid #ffffff;
         box-sizing: border-box;
 }
