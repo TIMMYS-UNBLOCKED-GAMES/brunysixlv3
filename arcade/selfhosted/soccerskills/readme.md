@@ -1,1 +1,0 @@
-dont mine at night!
