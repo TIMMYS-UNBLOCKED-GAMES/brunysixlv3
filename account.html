@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    .box {
+        width: 180px; 
+        border: 1px solid #fff;
+        padding: 10px; 
+        text-align: center; 
+        border-radius: 15px;
+    }
+    .pfp {
+        border-radius: 30px;
+        overflow: hidden;
+        width: 100px; 
+        height: 100px; 
+        margin: 0 auto 10px; 
+    }
+    .pfp img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .upload-btn {
+        display: block;
+        margin: 10px auto;
+    }
+</style>
+</head>
+<body>
+    <div class="box">
+        <div class="pfp" id="image-container">
+            <img id="uploaded-image" src="/assets/images/account/pfp.jpg" alt="404!!!1!">
+        </div>
+        <input type="file" id="image-upload" class="upload-btn" accept="image/*">
+        <h1>Your Profile</h1>
+    </div>
+
+    <script>
+        const imageUpload = document.getElementById('image-upload');
+        const uploadedImage = document.getElementById('uploaded-image');
+        const headingInput = document.getElementById('heading-input');
+
+        window.addEventListener('DOMContentLoaded', function() {
+            const savedImage = localStorage.getItem('uploadedImage');
+            const savedHeading = localStorage.getItem('headingText');
+
+            if (savedImage) {
+                uploadedImage.src = savedImage;
+            }
+            if (savedHeading) {
+                headingInput.value = savedHeading;
+                document.querySelector('.box h1').textContent = savedHeading;
+            }
+        });
+
+        imageUpload.addEventListener('change', function() {
+            const file = this.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    uploadedImage.src = event.target.result;
+                   
+                    localStorage.setItem('uploadedImage', event.target.result);
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+
+        headingInput.addEventListener('input', function() {
+            const newHeading = this.value;
+            document.querySelector('.box h1').textContent = newHeading;
+            
+            localStorage.setItem('headingText', newHeading);
+        });
+    </script>
+</body>
+</html>

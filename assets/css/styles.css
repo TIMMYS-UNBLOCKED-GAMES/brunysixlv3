@@ -1,0 +1,211 @@
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Lexend';
+            line-height: 1.6;
+            background-color: var(--navbar-color, #000); 
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #fff;
+            text-align: center;
+        }
+
+        header {
+            background: var(--navbar-color, #000); 
+            color: white;
+            padding: 10px 0;
+            width: 100%;
+            z-index: 1000;
+            position: fixed;
+            top: 0;
+            border-bottom: 1px solid white;
+        }
+
+        .header-container {
+            max-width: 960px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        header h1 a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+        }
+
+        header img {
+            border-radius: 30px;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 5px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: all 0.3s ease;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+
+        .settings-search {
+            display: flex;
+            align-items: center;
+        }
+
+        .settings-search img {
+            width: 20px;
+            height: 20px;
+            margin-left: 5px;
+        }
+
+        .cover {
+            height: calc(100vh - 60px);
+            background-color: var(--navbar-color, #000); 
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            margin-top: 60px;
+            padding-top: 0px;
+            border-bottom: 1px solid white;
+        }
+
+        .cover-alt {
+            height: calc(100vh - 60px);
+            background-image: url('alt funny image link lol'); 
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            margin-top: 60px;
+            padding-top: 60px;
+            border-bottom: 2px solid white;
+        }
+
+        .cover-roddyricchboxofftemu {
+            border-radius: 15px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .cover h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+         .cover .btn {
+            padding: 10px 20px;
+            background: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: background 0.3s;
+        }
+
+        .cover .btn:hover {
+            background: #fff;
+            color: #000;
+        }
+
+        .cover p {
+            font-size: 24px;
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+
+        main {
+            flex: 1;
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .hero {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+color: #fff;
+border-radius: 15px;
+border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .content {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+color: #fff;
+border-radius: 15px;
+border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        footer {
+            border-top: 1px solid white;
+            background-color: var(--navbar-color, #000); 
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        footer img {
+            width: 20px;
+            height: 20px;
+            margin: 0 5px; 
+	    margin-top: 5px;
+            cursor: pointer; 
+            filter: grayscale(100%);
+            transition: transform 0.3s ease;
+  		}
+
+		footer img:hover {
+            transform: scale(0.9);
+  		}
